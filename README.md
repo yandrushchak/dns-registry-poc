@@ -4,7 +4,7 @@
 
 This is a simple implementation of how hybrid web2/web3 resolution could work. It could cover 2 use cases:
 - Resolve web3 address when used from smart contracts/dapps
-- Resolve web2 DNS address when used from browsers or other apps
+- Resolve web2 DNS address when used from browsers or other apps (not fully implemented in scope of test task, authoritative name server is missing).
 
 Overall architecture of implemented solution is presented below:
 ![image](https://github.com/yandrushchak/dns-registry-poc/assets/51112334/62bc5df7-de2f-414f-ac9e-901a6e30d008)

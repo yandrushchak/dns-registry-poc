@@ -1,0 +1,29 @@
+{
+  "name": "dns-registry",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.ts --network sepolia",
+    "interact": "npx hardhat run scripts/interact.ts --network sepolia",
+    "test": "npx hardhat test",
+    "prettier": "prettier --write ./contracts/**/*.sol",
+    "lint": "npx hardhat check"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "4.8.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "2.0.2",
+    "@nomiclabs/hardhat-ethers": "2.2.3",
+    "@nomiclabs/hardhat-solhint": "3.0.1",
+    "@openzeppelin/hardhat-upgrades": "1.24.0",
+    "dotenv": "16.0.3",
+    "ethers": "5.7.2",
+    "hardhat": "2.14.0",
+    "js-sha3": "0.8.0",
+    "mocha": "10.2.0",
+    "prettier": "2.8.8",
+    "prettier-plugin-solidity": "1.1.3"
+  }
+}

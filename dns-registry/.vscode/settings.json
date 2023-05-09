@@ -1,0 +1,17 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.validate.enable": true,
+  "typescript.preferences.importModuleSpecifier": "shortest",
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "typescript.validate.enable": true,
+  "solidity.linter": "solhint",
+  "solidity.formatter": "prettier",
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  },
+  "cSpell.words": ["nomicfoundation", "nomiclabs", "typechain"]
+}

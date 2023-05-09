@@ -1,0 +1,10 @@
+type DNSRecord @entity {
+  id: ID!
+  ownerId: String!
+  metadataURI: String!
+  web3Address: String
+}
+
+type TLD @entity {
+  id: ID!
+}

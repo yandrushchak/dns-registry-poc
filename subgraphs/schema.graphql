@@ -3,6 +3,7 @@ type DNSRecord @entity {
   ownerId: String!
   metadataURI: String!
   web3Address: String
+  domain: String
 }
 
 type TLD @entity {

@@ -3,16 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://yandrushchak.github.io/dns-registry-poc",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base=/dns-registry-poc/",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
-    "eth-ens-namehash": "^2.0.8",
-    "ethers": "^6.3.0",
-    "nft.storage": "^7.0.3",
+    "ethers": "6.3.0",
+    "nft.storage": "7.0.3",
     "ra-data-json-server": "4.10.2",
     "react": "18.2.0",
     "react-admin": "4.10.2",
@@ -31,7 +31,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.3.4",
-    "sass": "^1.62.1",
+    "sass": "1.62.1",
     "typescript": "5.0.2",
     "vite": "4.3.2"
   }

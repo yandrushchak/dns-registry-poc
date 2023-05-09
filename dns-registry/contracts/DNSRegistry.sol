@@ -18,6 +18,13 @@ contract DNSRegistry is
 {
     event TLDAdded(string tld);
     event TLDRemoved(string tld);
+    event DomainAdded(
+        uint256 tokenId,
+        address owner,
+        string sld,
+        string tld,
+        address addressRecord
+    );
 
     mapping(string => bool) public supportedTLDs;
     mapping(uint256 => address) public records;
@@ -71,6 +78,7 @@ contract DNSRegistry is
 
         // Store web3 addresss record on-chain for sebsequent lookup
         records[tokenId] = addressRecord;
+        emit DomainAdded(tokenId, msg.sender, sld, tld, addressRecord);
     }
 
     /**
